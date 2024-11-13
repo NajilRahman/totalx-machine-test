@@ -62,7 +62,7 @@ function Login() {
                     })
                     .catch((err) => {
                         setLoading(false);
-                        toast.success('For testing purposes, use phone 123456789 and OTP 123456');
+                        toast.success('For testing purposes, use phone 1234567890 and OTP 123456');
                     });
             }).catch((error) => {
                 toast.error('Refresh the page before trying again');
