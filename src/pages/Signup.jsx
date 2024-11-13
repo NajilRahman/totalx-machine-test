@@ -74,20 +74,20 @@ function Signup() {
                         <small style={{ color: '#313131' }} className='mt-2 mb-5'>Let’s get you all set up so you can access your personal account.</small>
                         <form onSubmit={handleSubmit}>
                             <Row>
-                                <Col sm={6}>
-                                    <FloatingLabel controlId="floatingInput" label="Name" className="w-100 mt-5">
+                                <Col sm={6} className=''>
+                                    <FloatingLabel controlId="floatingInput" label="Name" className="w-100 mt-4">
                                         <Form.Control type="text" name='name' placeholder="Name" style={{ borderColor: '#1C1B1F' }} value={values.name} onChange={handleChange} onBlur={handleBlur} />
                                     </FloatingLabel>
-                                    <div className='form_error mb-2'><p className='text-danger'>{errors.name}</p></div>
+                                    <div className='form_error '><p className='text-danger'>{errors.name}</p></div>
                                 </Col>
                                 <Col sm={6}>
-                                    <FloatingLabel controlId="floatingInput" label="Phone" className="w-100 mt-5">
+                                    <FloatingLabel controlId="floatingInput" label="Phone" className="w-100  mt-4">
                                         <Form.Control name='phone' type="text" placeholder="Phone" style={{ borderColor: '#1C1B1F' }} value={values.phone} onChange={handleChange} onBlur={handleBlur} />
                                     </FloatingLabel>
-                                    <div className='form_error mb-2'><p className='text-danger'>{errors.phone}</p></div>
+                                    <div className='form_error '><p className='text-danger'>{errors.phone}</p></div>
                                 </Col>
                                 <Col sm={12}>
-                                    <FloatingLabel controlId="floatingInput" label="Email" className="w-100 mt-3">
+                                    <FloatingLabel controlId="floatingInput" label="Email" className="w-100 mt-4 ">
                                         <Form.Control type="email" name='email' placeholder="Email" style={{ borderColor: '#1C1B1F' }} value={values.email} onChange={handleChange} onBlur={handleBlur} />
                                     </FloatingLabel>
                                     <div className='form_error mb-4'><p className='text-danger'>{errors.email}</p></div>
